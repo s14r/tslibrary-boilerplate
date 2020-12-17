@@ -1,5 +1,5 @@
 {
-  "name": "@rmh-media/veeva-orm-core",
+  "name": "tslibrary-boilerplate",
   "version": "0.0.0",
   "description": "A simple ORM to work with CLM and MyInsight Data within the Veeva Ecosystem",
   "main": "dist/index.umd.js",
@@ -18,7 +18,7 @@
     "postpublish": "pinst --enable",
     "commit": "cz"
   },
-  "author": "RMH MEDIA",
+  "author": "s14r",
   "license": "MIT",
   "devDependencies": {
     "@commitlint/cli": "^11.0.0",
