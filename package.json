@@ -1,8 +1,14 @@
 {
   "name": "@rmh-media/veeva-orm-core",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "A simple ORM to work with CLM and MyInsight Data within the Veeva Ecosystem",
-  "main": "index.js",
+  "main": "dist/index.umd.js",
+  "module": "dist/index.es6.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
   "scripts": {
     "build": "rollup -c",
     "start": "rollup -c -w",
@@ -11,9 +17,11 @@
     "prepublishOnly": "pinst --disable",
     "postpublish": "pinst --enable"
   },
-  "author": "Sebastian Richter",
-  "license": "ISC",
+  "author": "RMH MEDIA",
+  "license": "MIT",
   "devDependencies": {
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
     "@rollup/plugin-json": "^4.1.0",
     "@rollup/plugin-replace": "^2.3.4",
     "@rollup/plugin-typescript": "^8.1.0",
@@ -21,6 +29,7 @@
     "@typescript-eslint/eslint-plugin": "^4.10.0",
     "@typescript-eslint/parser": "^4.10.0",
     "eslint": "^7.15.0",
+    "git-cz": "^4.7.6",
     "husky": "^5.0.6",
     "is-ci": "^2.0.0",
     "pinst": "^2.1.1",
